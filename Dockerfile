@@ -12,4 +12,4 @@ RUN mkdir -p /config && echo -e "[webif]\nhttpport = 8888\nhttpallowed = 127.0.0
 RUN echo -e "[account]\nuser = mybox\npwd = 12345\ngroup = 1" > /config/oscam.user
 
 # أمر تشغيل الأوسكام وربطه برقم النفق الخاص بك مباشرة
-CMD oscam -c /config & localtonet authtoken Y4MKHPGih9mcT3oXLfjdOB6FlxUZvuJsD && localtonet tunnel start --id 2149142
+CMD oscam -c /config & localtonet authtoken Y4MKHPGih9mcT3oXLfjdOB6FlxUZvuJsD && localtonet tunnel start --id 2149142 & sleep infinity
